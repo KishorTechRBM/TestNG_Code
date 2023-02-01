@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite1">
+<suite name="Suite1" parallel = "tests" thread-count = "3">
 
 	<test name="Test on Chrome">
 		<parameter name="browserName" value="chrome"></parameter>
@@ -16,11 +16,12 @@
 		</classes>
 	</test>
 
-	<test name="Test on internet_explorer">
-		<parameter name="browserName" value="internet_explorer"></parameter>
+	<test name="Test on MS_Edge">
+		<parameter name="browserName" value="MS_Edge"></parameter>
 		<classes>
 			<class name="CrossBrowser.SampleBrowser1" />
 		</classes>
 	</test>
 
 </suite>
+
